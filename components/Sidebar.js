@@ -23,7 +23,7 @@ function Sidebar() {
           alt="twitter Logo"
         />
       </div>
-      <div className="space-y-2.5 mt-4 mb-2.5 xl:ml-24">
+      <div className="space-y-8 xl:space-y-2.5 mt-4 mb-2.5 xl:ml-24">
         <SidebarLink text="Home" Icon={HomeIcon} active />
         <SidebarLink text="Explore" Icon={HashtagIcon} />
         <SidebarLink text="Notifications" Icon={BellIcon} />
@@ -35,10 +35,19 @@ function Sidebar() {
       </div>
 
       <button className="hidden xl:inline ml-auto bg-[#1d9bf0] text-white rounded-full w-56 h-[56px] text-lg font-bold shadow-md hover:bg-[#1a8cd8]">
-          Tweet
+        Tweet
       </button>
-      <div>
-          {/* <img src= alt="" /> */}
+      <div className="text-[#d9d9d9] flex items-center justify-center hoverAnimation xl:ml-auto  mt-auto">
+        <img
+          src="https://st.depositphotos.com/2101611/3925/v/600/depositphotos_39258143-stock-illustration-businessman-avatar-profile-picture.jpg"
+          alt="profileImage"
+          className="rounded-full w-10 h-10 xl:mr-2.5"
+        />
+        <div className="hidden xl:inline leading-5">
+          <h4 className="font-bold">Abel kIbebe</h4>
+          <p className="text-[#6e767d]">@zadig</p>
+        </div>
+        <DotsHorizontalIcon className="h-5 hidden xl:inline ml-10" />
       </div>
     </div>
   );
